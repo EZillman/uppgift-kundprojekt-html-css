@@ -1,11 +1,13 @@
-body{
-    background-image: url(assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+section:nth-child(1){
+    background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
     background-size: cover;
 }
 
-h1{
-    color:aqua;
+section:nth-child(2){
+    background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
+    background-size: cover;
 }
 
-
-
+.test{
+    min-height: 100vh;
+}
