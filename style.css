@@ -16,17 +16,6 @@ section:nth-child(3){
     min-height: 100vh;
 }
 
-/*Media queries*/
-@media screen and (min-width: 1366px){
-    section:nth-child(2){
-        background-color: aqua;
-    } 
- 
-}
-/*Skulle testa media queries men det verkar inte riktigt funka,
-bakgrunden är färgad i någon millisekund och sedan ser det ut som vanligt*/
-
-
 
  /*To The Moon Block*/   
 .block1{
@@ -74,3 +63,15 @@ span{
     display: block;
     background-color: black;
 }
+
+
+/*Media queries*/
+@media screen and (min-width: 1024px){
+    section:nth-child(2){
+        background-color: aqua;
+    
+    } 
+}
+/*Läste att media queries alltid ska ligga längst ner så jag fixade det,
+men det funkar fortfarande inte. Färgen jag satte visas i någon millisekund och sedan 
+ser det ut som innan*/
