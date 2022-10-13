@@ -1,11 +1,13 @@
 section:nth-child(1){
     background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
     background-size: cover;
+    background-position: center
 }
 
 section:nth-child(2){
     background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .test{
