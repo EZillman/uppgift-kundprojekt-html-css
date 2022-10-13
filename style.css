@@ -1,3 +1,5 @@
+
+/*Bakgrund*/
 section:nth-child(2){
     background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
     background-size: cover;
@@ -9,18 +11,35 @@ section:nth-child(3){
     background-size: cover;
     background-position: center;
 }
-    
 
 .test{
     min-height: 100vh;
 }
 
-nav{
-    width: 100%;
-    padding: 2px;
-    text-align: right;
+
+
+ /*To The Moon Block*/   
+.block1{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    top: 60px;
+    left: 60px;
+    padding: 10px;
+    border-style: solid;
+    background: transparent;
+    position: absolute;
 }
 
+p{
+    margin: 0;
+    position: absolute;
+    top: 100px;
+}
+    
+
+
+/*Meny*/
 button{
     margin: 5px;
     padding-right: 20px;
@@ -30,10 +49,17 @@ button{
     background: transparent;
 }
 
+.menu{
+    width: 100%;
+    padding: 2px;
+    text-align: right;
+    position: fixed;
+}
+
 span{
     margin: 6px;
     width: 100%;
-    height: 4px;
+    height: 6px;
     border-radius: 5px;
     display: block;
     background-color: black;
