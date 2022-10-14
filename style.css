@@ -3,11 +3,11 @@
 section:nth-child(2){
     background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
     background-size: cover;
-    background-position: center
+    background-position: 10% 20%;
 }
 
 section:nth-child(3){
-    background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash1.jpg");
+    background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashM.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -71,6 +71,9 @@ span{
         background-color: aqua;
     
     } 
+    section:nth-child(3){
+        background-image: ("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashD.jpg");
+    }
 }
 /*Läste att media queries alltid ska ligga längst ner så jag fixade det,
 men det funkar fortfarande inte. Färgen jag satte visas i någon millisekund och sedan 
