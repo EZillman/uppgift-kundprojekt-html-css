@@ -21,17 +21,37 @@
     outline: 3px solid brown;
 }
 
-.headp2{
-    outline: 3px solid green;
+.headp2 h2 span:first-of-type{
+    color: aliceblue;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.headp2 h2 span:nth-of-type(2){
+    color:deeppink;
+    position: relative;
+    top: -15px;
+    left: 10px;
+    z-index: 0;
 }
 
 .text1p2{
     outline: 3px solid purple;
 }
 
-.quote{
-    outline: 3px solid yellow;
+blockquote{
+      outline: yellow;
+      margin: 0;
+      padding: 0;
+      &::before &::after{
+        content: '"';
+        display: block;
+    }
 }
+
+/*Får upp Parse Error vid "}" tecknet som ligger efter content: '"';
+spelar ingen roll om jag tar bort eller lägger till en "}" */
 
 .secondhalfp2{
     outline: 3px solid grey;
@@ -110,7 +130,7 @@ input:checked + button span{
     transition: all 0.3s ease-in-out;
 }
 /*Animationen till krysset är inte helt klar
-strecken hoppar och sedan försvinner när jag trycker i rutan*/
+strecken hoppar och sätter sig utanför sidan när jag trycker i rutan*/
 
 input:checked + button span:nth-child(2){
     opacity: 0;
@@ -127,15 +147,26 @@ input:checked + button span:nth-child(3){
 
 
 /*Media queries*/
-@media screen and (min-width: 1036px){
+@media screen and (min-width: 1024px){
     .container1{
-        background-color: aqua;
-        background-image: none;
+        background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+        background-size: cover;
+        background-position: 20% 50%;
+        min-height: 100vh;
     
     } 
     .container2{
         background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashD.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+        min-height: 100vh;
+        display: flex;
+        gap: 100px;
     }
+    .firsthalfp2, .secondhalfp2{
+        width: 50%;
+    }
+
 }
 /*Jag insåg att jag inte dolde bilden här i min media query,
 jag la bara på en bakgrundsfärg och bilden måste ha lagt sig över.
