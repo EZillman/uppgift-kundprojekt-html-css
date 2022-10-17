@@ -1,3 +1,8 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 /*Bakgrund*/
 .container1{
@@ -38,13 +43,15 @@
 
 .text1p2{
     outline: 3px solid purple;
+    color: white;
 }
 
 blockquote{
       position: relative;
       display: inline;
       margin: 20px;
-      padding: 0;   
+      padding: 0;  
+      color: white; 
 }
 
 .quote::before,.quote::after{
@@ -76,6 +83,11 @@ blockquote{
 
 .text2p2{
     outline: 3px solid blue;
+    color: white;
+}
+
+.major-tom{
+    display: none;
 }
 
 
@@ -181,13 +193,27 @@ input:checked + button span:nth-child(3){
     .firsthalfp2, .secondhalfp2{
         width: 50%;
     }
+
+    /*Quote*/
     .hide{
         display: block;
         background: #D9D99C;
         background: radial-gradient(circle farthest-corner at center center, #D9D99C 0%, #CF1767 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        opacity: 40%;
+        opacity: 35%;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .major-tom{
+        display: block;
+        width: 100px;
+        height: auto;
+        float: right;
+        transform: rotate(3deg);
+        
     }
 
 
