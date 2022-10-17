@@ -127,15 +127,16 @@ input:checked + button span:nth-child(3){
 
 
 /*Media queries*/
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1036px){
     .container1{
         background-color: aqua;
+        background-image: none;
     
     } 
     .container2{
         background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashD.jpg");
     }
 }
-/*Läste att media queries alltid ska ligga längst ner så jag fixade det,
-men det funkar fortfarande inte. Färgen jag satte visas i någon millisekund och sedan 
-ser det ut som innan*/
+/*Jag insåg att jag inte dolde bilden här i min media query,
+jag la bara på en bakgrundsfärg och bilden måste ha lagt sig över.
+Så problemet är löst.*/
