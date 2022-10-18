@@ -13,13 +13,19 @@
 }
 
 .container2{
-    background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashD.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashM.jpg");
     background-size: cover;
     background-position: 10% 20%;
     min-height: 100vh;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
+body{
+    font-family: "Rubik", sans-serif;
+}
 
 /*Sida 2*/
 .firsthalfp2{
@@ -171,6 +177,7 @@ input:checked + button span:nth-child(3){
 
 
 
+
 /*Media queries*/
 @media screen and (min-width: 1024px){
     .container1{
@@ -182,16 +189,21 @@ input:checked + button span:nth-child(3){
     } 
 
     .container2{
-        background-image: url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashD.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashD.jpg");
         background-size: cover;
         background-position: 50% 50%;
         min-height: 100vh;
         display: flex;
-        gap: 100px;
+        gap: 30px;
     }
 
     .firsthalfp2, .secondhalfp2{
         width: 50%;
+        margin: 50px;
+    }
+
+    .text1p2{
+        padding: 20px;
     }
 
     /*Quote*/
