@@ -37,14 +37,16 @@ body{
     display: block;
     position: relative;
     z-index: 1;
+    font-weight: 900;
 }
 
 .headp2 h2 span:nth-of-type(2){
-    color:deeppink;
+    color: lightgrey;
     position: relative;
     top: -15px;
     left: 10px;
     z-index: 0;
+    opacity: 60%;
 }
 
 .text1p2{
@@ -195,6 +197,29 @@ input:checked + button span:nth-child(3){
         min-height: 100vh;
         display: flex;
         gap: 30px;
+    }
+
+    /*To The Moon Block*/   
+    .block1p1{
+        width: 400px;
+        height: 400px;
+        margin: 0;
+        top: 100px;
+        left: 100px;
+        padding: 15px;
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        background: transparent;
+        position: absolute;
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    p{
+        margin: 0;
+        position: absolute;
+        top: 100px;
     }
 
     .firsthalfp2, .secondhalfp2{
