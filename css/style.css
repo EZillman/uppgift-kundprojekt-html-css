@@ -8,14 +8,14 @@
 
 /*Bakgrund*/
 .container1{
-    background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+    background-image: url("../assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
     background-size: cover;
     background-position: 10% 20%;
     min-height: 100vh;
 }
 
 .container2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
     background-size: cover;
     background-position: 10% 20%;
     min-height: 100vh;
@@ -40,6 +40,7 @@ body{
 }
 
 button{
+    position: relative;
     margin: 10px;
     padding: 10px;
     height: 55px;
@@ -58,6 +59,16 @@ button span{
     background-color: black;
 }
 
+input{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 55px;
+    width: 65px;
+    opacity: 0;
+    z-index: 2;
+}
+
 button span:nth-child(2){
     left: -6px;
     position: relative;
@@ -69,7 +80,7 @@ button:hover span:nth-child(2){
 }
 
 input:checked + button span{
-    
+    position: absolute;
     transition: all 0.3s ease-in-out;
 }
 /*Animationen till krysset är inte helt klar
@@ -80,10 +91,14 @@ input:checked + button span:nth-child(2){
 }
 
 input:checked + button span:nth-child(1){
+    
+    transform-origin: center center;
     transform: rotate(45deg);
 }
 
 input:checked + button span:nth-child(3){
+    
+    transform-origin: center center;
     transform: rotate(-45deg);
 }
 
@@ -138,11 +153,12 @@ input:checked + button span:nth-child(3){
 .headp2 h2 span:nth-of-type(2){
     color: lightgrey;
     position: relative;
-    top: -35px;
-    left: 50px;
+    top: -40px;
+    left: 48px;
     z-index: 0;
     opacity: 60%;
-    font-size: 50px;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -171,6 +187,7 @@ blockquote{
       font-size: 15px;
       padding-left: 20px;
       line-height: 170%;
+      font-style: italic;
 }
 
 
@@ -179,7 +196,7 @@ blockquote{
     display: block;
     position: absolute;
     font-size: 15px;
-  }
+}
 
 .quote::before{
     top: -10%;
@@ -193,9 +210,7 @@ blockquote{
 
 
 .hide{
-    outline: 3px solid red;
     display: none;
-
 }
 
 
@@ -219,7 +234,7 @@ blockquote{
 /*Media queries*/
 @media screen and (min-width: 1024px){
     .container1{
-        background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+        background-image: url("../assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
         background-size: cover;
         background-position: 20% 50%;
         min-height: 100vh;
@@ -227,7 +242,7 @@ blockquote{
     } 
 
     .container2{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashD.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashD.jpg");
         background-size: cover;
         background-position: 50% 50%;
         min-height: 100vh;
@@ -264,27 +279,87 @@ blockquote{
     }
 
 
+    /*Sida 2 header*/
+    .headp2{
+        padding-top: 5px;
+        padding-left: 50px;
+        
+    }
+    
+    .headp2 h2 span:first-of-type{
+        font-size: 100px;
+        font-weight: 600;
+    }
+    
+    .headp2 h2 span:nth-of-type(2){
+        font-size: 120px; 
+        top: -55px;
+        left: 20px;
+    }
+
 
     .firsthalfp2, .secondhalfp2{
         width: 50%;
         margin: 50px;
     }
 
+    /*Sida 2 text 1*/
     .text1p2{
-        padding: 20px;
+        font-size: 18px;
     }
 
-    /*Quote*/
+    .text1p2 h3{
+        font-size: 30px;
+    }
+
+
+    /*Quotes*/
+    blockquote{
+        font-size: 25px;
+    }
+  
+      .quote::before,.quote::after{
+      content: '"';
+      display: block;
+      position: absolute;
+      font-size: 25px;
+    }
+  
+    .quote::before{
+        top: -10%;
+        left: 3%;
+    }
+  
+    .quote::after{
+        bottom: 5%;
+        right: 73%;
+    }
+
     .hide{
         display: block;
         background: #D9D99C;
         background: radial-gradient(circle farthest-corner at center center, #D9D99C 0%, #CF1767 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        opacity: 35%;
-        font-weight: bold;
-        font-size: 2rem;
-        text-align: center;
+        opacity: 30%;
+        font-size: 38px;
+        font-style: italic;
+        width: 50%;
+        margin-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        line-height: 140%;
+    }
+
+
+
+    /*Sida 2 text 2*/
+    .text2p2{
+        margin-top: 10px;
+        padding: 30px;
+        font-size: 18px;
     }
 
     .major-tom{
