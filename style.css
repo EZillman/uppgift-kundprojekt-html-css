@@ -28,8 +28,9 @@ body{
 }
 
 /*Sida 2*/
-.firsthalfp2{
-    outline: 3px solid brown;
+.headp2{
+    padding-top: 20px;
+    padding-left: 50px;
 }
 
 .headp2 h2 span:first-of-type{
@@ -37,7 +38,7 @@ body{
     display: block;
     position: relative;
     z-index: 1;
-    font-weight: 900;
+    font-size: 50px;
 }
 
 .headp2 h2 span:nth-of-type(2){
@@ -47,20 +48,30 @@ body{
     left: 10px;
     z-index: 0;
     opacity: 60%;
+    font-size: 50px;
 }
 
 .text1p2{
     outline: 3px solid purple;
     color: white;
+    font-size: 10px;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.text1p2 h3{
+    font-size: 20px;
 }
 
 blockquote{
       position: relative;
-      display: inline;
-      margin: 20px;
-      padding: 0;  
+      display: inline-block;
       color: white; 
+      font-size: 15px;
 }
+
 
 .quote::before,.quote::after{
     content: '"';
@@ -92,6 +103,11 @@ blockquote{
 .text2p2{
     outline: 3px solid blue;
     color: white;
+    font-size: 10px;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .major-tom{
