@@ -4,6 +4,8 @@
     display: table;
   }
 
+
+
 /*Bakgrund*/
 .container1{
     background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
@@ -13,7 +15,7 @@
 }
 
 .container2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplashM.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
     background-size: cover;
     background-position: 10% 20%;
     min-height: 100vh;
@@ -27,125 +29,6 @@ body{
     font-family: "Rubik", sans-serif;
 }
 
-/*Sida 2*/
-.headp2{
-    padding-top: 20px;
-    padding-left: 50px;
-}
-
-.headp2 h2 span:first-of-type{
-    color: aliceblue;
-    display: block;
-    position: relative;
-    z-index: 1;
-    font-size: 50px;
-}
-
-.headp2 h2 span:nth-of-type(2){
-    color: lightgrey;
-    position: relative;
-    top: -15px;
-    left: 10px;
-    z-index: 0;
-    opacity: 60%;
-    font-size: 50px;
-}
-
-.text1p2{
-    outline: 3px solid purple;
-    color: white;
-    font-size: 10px;
-    margin-top: 0;
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.text1p2 h3{
-    font-size: 20px;
-}
-
-blockquote{
-      position: relative;
-      display: inline-block;
-      color: white; 
-      font-size: 15px;
-}
-
-
-.quote::before,.quote::after{
-    content: '"';
-    display: block;
-    position: absolute;
-    font-size: 2rem;
-  }
-
-.quote::before{
-    top: -60%;
-    left: -10%;
-}
-
-.quote::after{
-    bottom: -60%;
-    right: -10%;
-}
-
-.secondhalfp2{
-    outline: 3px solid grey;
-}
-
-.hide{
-    outline: 3px solid red;
-    display: none;
-
-}
-
-.text2p2{
-    outline: 3px solid blue;
-    color: white;
-    font-size: 10px;
-    margin-top: 0;
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.major-tom{
-    display: none;
-}
-
-
-
- /*To The Moon Block*/   
-.block1p1{
-    width: 100px;
-    height: 110px;
-    margin: 0;
-    top: 50px;
-    left: 50px;
-    padding: 10px;
-    border-style: solid;
-    background: transparent;
-    position: absolute;
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0.6470297591692927) 50%, rgba(255,255,255,0.6526320000656513) 100%);
-    text-align: center;
-    font-size: 14px;
-}
-
-.block1p1 a{
-    margin: 0;
-    position: absolute;
-    top: 100px;
-    color: black;
-    text-align: left;
-    font-size: 9px;
-    text-decoration: none;
-}
-    
 
 
 /*Menyknapp*/
@@ -204,6 +87,132 @@ input:checked + button span:nth-child(3){
     transform: rotate(-45deg);
 }
 
+
+
+ /*To The Moon Block*/   
+.block1p1{
+    width: 100px;
+    height: 110px;
+    margin: 0;
+    top: 50px;
+    left: 50px;
+    padding: 10px;
+    border-style: solid;
+    background: transparent;
+    position: absolute;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.6470297591692927) 50%, rgba(255,255,255,0.6526320000656513) 100%);
+    text-align: center;
+    font-size: 14px;
+}
+
+.block1p1 a{
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    color: black;
+    text-align: left;
+    font-size: 9px;
+    text-decoration: none;
+}
+    
+
+
+/*Sida 2 header*/
+.headp2{
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.headp2 h2 span:first-of-type{
+    color: aliceblue;
+    display: block;
+    position: relative;
+    z-index: 1;
+    font-size: 50px;
+}
+
+.headp2 h2 span:nth-of-type(2){
+    color: lightgrey;
+    position: relative;
+    top: -35px;
+    left: 50px;
+    z-index: 0;
+    opacity: 60%;
+    font-size: 50px;
+}
+
+
+/*Sida 2 text 1*/
+.text1p2{
+    color: white;
+    font-size: 10px;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    line-height: 170%;
+}
+
+.text1p2 h3{
+    font-size: 20px;
+}
+
+
+
+/*Quotes*/
+blockquote{
+      position: relative;
+      display: inline-block;
+      color: white; 
+      font-size: 15px;
+      padding-left: 20px;
+      line-height: 170%;
+}
+
+
+.quote::before,.quote::after{
+    content: '"';
+    display: block;
+    position: absolute;
+    font-size: 15px;
+  }
+
+.quote::before{
+    top: -10%;
+    left: 5%;
+}
+
+.quote::after{
+    bottom: 5%;
+    right: 70%;
+}
+
+
+.hide{
+    outline: 3px solid red;
+    display: none;
+
+}
+
+
+/*Sida 2 text 2*/
+.text2p2{
+    color: white;
+    font-size: 10px;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 170%;
+}
+
+.major-tom{
+    display: none;
+}
 
 
 
