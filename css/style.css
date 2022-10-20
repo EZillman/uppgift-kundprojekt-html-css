@@ -41,13 +41,15 @@ body{
 
 button{
     position: relative;
-    margin: 10px;
-    padding: 10px;
     height: 55px;
     width: 65px;
+    top: 20px;
+    right: 20px;
     border: 0;
     background: transparent;
     cursor: pointer;
+    pointer-events: none;
+    z-index: 2;
 }
 
 button span{
@@ -60,46 +62,80 @@ button span{
 }
 
 input{
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: fixed;
+    margin: 10px;
+    padding: 10px;
     height: 55px;
     width: 65px;
-    opacity: 0;
-    z-index: 2;
+    top: 20px;
+    right: 20px;
+    opacity: 0%;
+    z-index: 1;
+    cursor: pointer;
 }
 
-button span:nth-child(2){
+.menu button span:nth-child(2){
     left: -6px;
     position: relative;
     transition: left 0.3s ease-in-out;
 }
 
-button:hover span:nth-child(2){
+
+input:hover + .menu button span:nth-child(2){
     left: 0;
 }
 
-input:checked + button span{
+input:checked + .menu button span{
     position: absolute;
     transition: all 0.3s ease-in-out;
 }
-/*Animationen till krysset är inte helt klar
-strecken hoppar och sätter sig utanför sidan när jag trycker i rutan*/
 
-input:checked + button span:nth-child(2){
+input:checked + .menu button span:nth-child(2){
     opacity: 0;
 }
 
-input:checked + button span:nth-child(1){
-    
+input:checked + .menu button span:nth-child(1){
     transform-origin: center center;
     transform: rotate(45deg);
 }
 
-input:checked + button span:nth-child(3){
-    
+input:checked + .menu button span:nth-child(3){
     transform-origin: center center;
     transform: rotate(-45deg);
+}
+
+
+
+
+/*Navigation*/
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    visibility: hidden;
+}
+
+input:checked + .menu nav{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 
@@ -121,7 +157,11 @@ input:checked + button span:nth-child(3){
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0.6470297591692927) 50%, rgba(255,255,255,0.6526320000656513) 100%);
     text-align: center;
-    font-size: 14px;
+    font-size: 14px; 
+}
+
+.block1p1 h1{
+    text-transform: uppercase;
 }
 
 .block1p1 a{
@@ -143,20 +183,22 @@ input:checked + button span:nth-child(3){
 }
 
 .headp2 h2 span:first-of-type{
-    color: aliceblue;
+    color: whitesmoke;
     display: block;
     position: relative;
+    top: 10px;
     z-index: 1;
     font-size: 50px;
+    text-shadow: 2px 2px 4px#000000;
 }
 
 .headp2 h2 span:nth-of-type(2){
-    color: lightgrey;
+    color: #deddd1;
     position: relative;
-    top: -40px;
+    top: -30px;
     left: 48px;
     z-index: 0;
-    opacity: 60%;
+    opacity: 70%;
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -369,6 +411,13 @@ blockquote{
         float: right;
         transform: rotate(3deg);
         
+    }
+
+
+
+    /*cookies text*/
+    footer{
+        color: #d200a2;
     }
 
 
