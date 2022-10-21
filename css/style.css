@@ -148,6 +148,7 @@ nav li{
 
 
 
+
  /*To The Moon Block*/   
 .block1p1{
     width: 100px;
@@ -270,6 +271,7 @@ blockquote{
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 10px;
     line-height: 170%;
 }
 
@@ -277,10 +279,42 @@ blockquote{
     display: none;
 }
 
+.text2p2 span{
+    color: #d20085;
+    text-decoration: underline 1px #d20085;
+    cursor: pointer;
+}
+
 
 /*cookies*/
 footer{
-    display: none;
+    background-color: #060029;
+    padding: 10px;
+    font-size: 10px;
+    position: sticky;
+    margin: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+footer p{
+    color: #d20085;
+    text-shadow: 0px 0px 5px #ff5cc3;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.cookies{
+    position: sticky;
+    background-color: #0e0159;
+    margin: 10px;
+    min-width: fit-content;
+    height: 30px;
+    color: whitesmoke;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 
@@ -302,6 +336,8 @@ footer{
         display: flex;
         gap: 30px;
     }
+
+
 
     /*To The Moon Block*/   
     .block1p1{
@@ -332,6 +368,14 @@ footer{
     }
 
 
+
+    /* Navigation */
+    nav li:hover{
+        text-decoration: underline 5px #d20085;
+        cursor: pointer;
+    }
+
+
     /*Sida 2 header*/
     .headp2{
         margin-top: 0;
@@ -356,6 +400,8 @@ footer{
         width: 50%;
         margin: 50px;
     }
+
+
 
     /*Sida 2 text 1*/
     .text1p2{
@@ -387,13 +433,13 @@ footer{
   
     .quote::after{
         bottom: 5%;
-        right: 73%;
+        right: 72%;
     }
 
     .hide{
         display: block;
         background: #D9D99C;
-        background: radial-gradient(circle farthest-corner at center center, #D9D99C 0%, #CF1767 100%);
+        background: radial-gradient(circle farthest-corner at center center, #e9e9b4 0%, #CF1767 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 30%;
@@ -429,10 +475,21 @@ footer{
 
     /*cookies*/
     footer{
-        display: block;
+        display: flex;
         background-color: #060029;
-        color: #d20085;
-        padding: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+    .cookies{
+        height: 40px;
+        min-width: fit-content;
+        bottom: 20px;
     }
 
 }
