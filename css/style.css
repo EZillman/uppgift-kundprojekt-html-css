@@ -3,8 +3,7 @@
     clear: both;
     display: table;
   }
-
-
+  
 
 /*Bakgrund*/
 .container1{
@@ -171,6 +170,8 @@ nav li{
 
 .block1p1 h1{
     text-transform: uppercase;
+    width: 90px;
+    margin-top: 0;
 }
 
 .block1p1 a{
@@ -179,6 +180,13 @@ nav li{
     color: black;
     font-size: 9px;
     text-decoration: none;
+    top: 115px;
+    left: 5px;
+    width: 75px;
+}
+
+.block1p1 a span{
+    content: "\2192";
 }
     
 
@@ -209,6 +217,7 @@ nav li{
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 
 
 /*Sida 2 text 1*/
@@ -357,21 +366,28 @@ footer p{
         text-align: center;
     }
 
+    .block1p1 h1{
+        padding-top: 60px;
+        width: 400px;
+    }
+
     .block1p1 a{
-        margin: 0;
-        position: absolute;
         top: 400px;
-        left: 200px;
+        left: 190px;
+        margin-bottom: 15px;
         font-size: 20px;
-        color: black;
-        text-decoration: none;
+        width: fit-content;
+      
     }
 
 
 
     /* Navigation */
     nav li:hover{
-        text-decoration: underline 5px #d20085;
+        background-image: linear-gradient(rgb(255, 0, 157), rgb(255, 0, 157));
+        background-size: 100% 10px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
         cursor: pointer;
     }
 
@@ -491,5 +507,7 @@ footer p{
         min-width: fit-content;
         bottom: 20px;
     }
+
+    
 
 }
